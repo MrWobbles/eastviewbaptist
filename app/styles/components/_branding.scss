@@ -1,0 +1,107 @@
+.logo {
+    display: block;
+    width: auto;
+    height: 200px;
+    color: transparent;
+    background: transparent url("../images/logo.png") no-repeat center center;
+    background-size: contain;
+
+    &.small {
+        height: 35px;
+    }
+}
+
+.slant-bottom {
+    -webkit-clip-path: polygon(100% 80%, 0 100%, 0 0, 100% 0);
+    clip-path: polygon(100% 80%, 0 100%, 0 0, 100% 0);
+    transition: all 0.5s $cubic-bezier;
+
+    @include breakpoint(medium) {
+        -webkit-clip-path: polygon(100% 60%, 0 100%, 0 0, 100% 0);
+        clip-path: polygon(100% 60%, 0 100%, 0 0, 100% 0);
+    }
+}
+
+.blue-slant {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 300px;
+    background-color: #00ccff;
+    height: 250px;
+    width: 100%;
+    -webkit-clip-path: polygon(100% 100%, 0 80%, 0 0, 100% 0);
+    clip-path: polygon(100% 100%, 0 80%, 0 0, 100% 0);
+    transition: all 0.5s $cubic-bezier;
+
+    @include breakpoint(medium) {
+        -webkit-clip-path: polygon(100% 100%, 0 30%, 0 0, 100% 0);
+        clip-path: polygon(100% 100%, 0 60%, 0 0, 100% 0);
+    }
+}
+
+section.callout {
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    transition: all 0.5s $cubic-bezier;
+    background: transparent url("../images/bible.jpg") no-repeat center center;
+    position: relative;
+    padding: 0;
+    margin: 50px 0;
+    color: #fff;
+
+    @include breakpoint(medium) {
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    }
+}
+
+.vision {
+    ul {
+        list-style-type: none;
+
+        li {
+            font-style: italic;
+        }
+    }
+}
+
+.welcome.text,
+.vision.text,
+.mission.text {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.breaker {
+    height: 0;
+    width: 0;
+    clear: both;
+
+    &.blue {
+        .slant-top-left {
+            height: 0;
+            border-top: transparent;
+            border-left: 1077px transparent solid;
+            border-bottom: 150px solid #fff;
+            width: 0;
+            position: relative;
+            top: -150px;
+        }
+
+        .slant-top-right {
+            position: absolute;
+            top: 0;
+            height: 0;
+            width: 0;
+            right: 0;
+            border-right: 350px solid $accent-color;
+            border-top: 48px solid transparent;
+            border-bottom: 100px solid transparent;
+            border-left: 0;
+        }
+    }
+}

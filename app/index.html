@@ -2,64 +2,197 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <title>eastviewbaptist</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <!-- build:css(.) styles/vendor.css -->
+    <title>eastviewbaptist</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/classie/classie.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/bower_components/fullcalendar/dist/fullcalendar.css' />
+
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-    
   </head>
   <body>
     <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></li>
-        <li><a href="http://libsass.org/">Sass</a></li>
-        <li><a href="http://modernizr.com/">Modernizr</a></li>
-      </ul>
-    </div>
-    
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    
-
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
+    <div class="container">
+      <div class="wrapper">
+        <header class="slant-bottom">
+          <div class="overlay">
+            <nav>
+              <div class="grid">
+                <a class="logo small col-1-12" href="/index.html">Eastview Baptist Church</a>
+                <div id="showMenu" class="mobile-nav-toggle col-1-12">
+                  <span>&nbsp;</span>
+                </div>
+                <div class="nav-list col-9-12">
+                  <ul class="top">
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#calendar">Calendar</a></li>
+                    <li><a href="#ministries">Ministries</a></li>
+                    <li><a href="#social-media">Find Us Online</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <h1 class="logo">Eastview Baptist Church</h1>
+            <div class="caption">
+              Worship the Lord in the splendor of His holiness. <a class="reference" target="_blank" href="https://www.bible.com/bible/72/psa.96.9.hcsb">Psalm 96:9</a>
+            </div>
+          </header>
+          <div class="main">
+            <div class="blue-slant">&nbsp;</div>
+            <section id="about-us">
+              <h1 class="section-head grid grid-pad">
+              <div class="col-3-12">
+                <span class="main">About <span>Us</span></span>
+                <span class="sub-head">Because Life Matters</span>
+              </div>
+              <div class="divider col-1-12">&nbsp;</div>
+              <span class="quote-head col-8-12">Eastview Baptist Church is a Southern Baptist Church located on the north end of Springfield, IL.
+              We have a small but active church with an active youth/adult ministry, children's programs, weekly craft ladies events, a fun Red Hat group, scrapbooking nights, counseling services, and much more.e</span>
+              </h1>
+              <div class="grid grid-pad">
+                <ul class="nav-secondary">
+                  <li id="welcome" class="tab" data-tab="welcome">Welcome</li>
+                  <li id="visions" class="tab" data-tab="visions">Vision</li>
+                  <li id="mission" class="tab" data-tab="mission">Mission</li>
+                </ul>
+                <div class="about-us tab-container">
+                  <div class="welcome text active">
+                    <div class="pastor-letter">
+                      <p>I want to thank you for visiting our site today and I want to personally invite you to come and worship with us in one of our worship services. I hope that you enjoy seeing all that God is doing here at Eastview. If you have any questions or if we could be of any benefit to you or your family then feel free to e-mail us at <a href="mailto:evbaptist@sbcglobal.net">evbaptast@sbcglobal.net</a>.</p><p> May God bless you and draw you close to Him!</p>
+                      <span class="salutation">With Love From Above,</span>
+                      <span class="by-line">Pastor Bennie D. Fisher</span>
+                    </div>
+                  </div>
+                  <div class="vision text">
+                    <p>The purpose of this organization shall be:</p>
+                    <ul>
+                      <li>the worship of Almighty God, according to the teachings of His Word</li>
+                      <li>to minister to the physical and spiritual needs of the congregation</li>
+                      <li>to evangelize the whole world</li>
+                    </ul>
+                  </div>
+                  <div class="mission text">
+                    <p>Mission Statement</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="calendar">
+              <h1 class="section-head grid grid-pad">
+              <div class="col-3-12">
+                <span class="main">Get <span>Involved</span></span>
+                <span class="sub-head">Because Life Matters</span>
+              </div>
+              <div class="divider col-1-12">&nbsp;</div>
+              <span class="quote-head col-8-12">Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</span>
+              </h1>
+              <div class="grid grid-pad">
+                <div id="calendar-view"></div>
+              </div>
+            </section>
+            <section id="contact-us" class="callout">
+              <div class="overlay">
+                <h1 class="section-head grid grid-pad">
+                <div class="col-3-12">
+                  <span class="main">Contact <span>Us</span></span>
+                  <span class="sub-head">Because Life Matters</span>
+                </div>
+                <div class="divider col-1-12">&nbsp;</div>
+                <span class="quote-head col-8-12">Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</span>
+                </h1>
+                <div class="grid grid-pad">
+                  <ul class="nav-secondary">
+                    <li>Contact</li>
+                    <li>Our Team</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section id="ministries">
+              <h1 class="section-head grid grid-pad">
+              <div class="col-3-12">
+                <span class="main">Our <span>Ministries</span></span>
+                <span class="sub-head">Because Life Matters</span>
+              </div>
+              <div class="divider col-1-12">&nbsp;</div>
+              <span class="quote-head col-8-12">Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</span>
+              </h1>
+              <div class="grid grid-pad">
+                <ul class="nav-secondary">
+                  <li>Counseling</li>
+                  <li>Women on Mission</li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <h1 class="section-head grid grid-pad">
+              <div class="col-3-12">
+                <span class="main">Get <span>In Touch</span></span>
+                <span class="sub-head">Because Life Matters</span>
+              </div>
+              <div class="divider col-1-12">&nbsp;</div>
+              <span class="quote-head col-8-12">Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</span>
+              </h1>
+              <div class="grid grid-pad">
+                <ul class="nav-secondary">
+                  <li>Contact</li>
+                  <li>Our Team</li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <div class="map overlay"></div>
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1261.8661449428776!2d-89.61863033637266!3d39.82262742949121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887530aebdab1109%3A0xcede65c3f9285981!2sEastview+Baptist+Church!5e0!3m2!1sen!2sus!4v1442980294867" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+            <ul class="social-media">d
+              <li><span class="fa fa-facebook"></span></li>
+              <li><span class="fa fa-twitter"></span></li>
+            </ul>
+            <section id="map">
+            </section>
+          </div>
+          <footer>
+            © 2015 Eastview Baptist Church, All rights reserved.
+          </footer>
+        </div>
+      </div>
+      
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-  </body>
-</html>
+      </script>
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="/bower_components/jquery/dist/jquery.js"></script>
+      <script src='/bower_components/moment/min/moment.min.js'></script>
+      <script src='/bower_components/fullcalendar/dist/fullcalendar.js'></script>
+      <script type='text/javascript' src='/bower_components/fullcalendar/dist/gcal.js'></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+      
+      <!-- build:js scripts/main.js -->
+      <script src="scripts/main.js"></script>
+      <!-- endbuild -->
+    </body>
+  </html>
