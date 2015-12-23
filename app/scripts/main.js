@@ -7,11 +7,12 @@ $('.mobile-nav-toggle' ).on( 'click', function() {
 
 $(document).ready(function(){
     $('#calendar-view').fullCalendar({
-    	height: 450,
-    	left:   'title',
-    	center: false,
-    	right:  false,
-    	googleCalendarApiKey: 'AIzaSyCBxIozpJqFt_ZFiVrXJoAlS2-0djnN3_k',
+        header: {
+          left: '',
+          center: 'month year',
+          right: ''
+        },
+    	googleCalendarApiKey: 'AIzaSyAUNBuJ0uvpsy1SH8QEu0P_RHUQLQHHDz8',
         events: {
             googleCalendarId: 'l6qg606uc1koc41i3c68kii64c@group.calendar.google.com'
         }
