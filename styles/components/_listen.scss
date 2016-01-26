@@ -1,0 +1,66 @@
+.sermon{
+	text-align: center;
+	margin: 0 auto 50px auto;
+    float: none;
+
+	h2{
+		font-size: 20px;
+	    font-weight: 800;
+	    color: #fff;
+	    background: #333;
+	    margin: 25px 0;
+	    padding: 10px;
+	}
+}
+
+.sermon-link {
+	position: relative;
+    width: 105px;
+    margin: 0 auto;
+    background: #f2f2f2;
+    height: 105px;
+    color: #333;
+    border-radius: 105px;
+    padding-top: 33px;
+    font-size: 40px;
+    padding-left: 10px;
+	transition: all .5s ease-in-out;
+
+    &:hover{
+    	background: $primary-color;
+    	color: #fff;
+    	cursor: pointer;
+    }
+
+    .icon{
+	    position: absolute;
+	    left: 56%;
+	    transform: translateX(-50%);
+		transition: all .5s ease-in-out;
+    }
+
+    audio{
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    left: 75%;
+	    opacity: 0;
+	    width: 0;
+
+	    transition: all .5s ease-in-out;
+    }
+
+    &.expanded{
+    	width: 90%;
+
+    	.icon{
+    		left: 60px;
+    	}
+
+    	audio{
+    		opacity: 1;
+    		left: 100px;
+    		width: 80%;
+    	}
+    }
+}

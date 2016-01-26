@@ -1,0 +1,65 @@
+header {
+    position: relative;
+    z-index: 2;
+    height: 550px;
+    color: #fff;
+    background: transparent url("../images/header-bg.jpg") no-repeat center center;
+    background-size: cover;
+    margin: 0 0 20px 0;
+
+    .logo.small {
+        margin-top: 10px;
+    }
+
+    h1.logo {
+        width: 25%;
+        max-height: 150px;
+        margin: 0 auto 20px;
+    }
+}
+
+.overlay {
+    height: 100%;
+    background: transparent url("../images/overlay-pixel.png") top left;
+    background-size: 2px;
+    padding-top: 95px;
+
+    &.light {
+        background-image: url("../images/overlay-pixel-white.png");
+    }
+
+    &.map {
+        height: 450px;
+        width: 100%;
+        opacity: .25;
+        position: absolute;
+    }
+}
+
+.caption {
+    font-weight: 600;
+    font-size: 28px;
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    transition: font-size 0.5s $cubic-bezier;
+
+    @include breakpoint(medium) {
+        font-size: 24px;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+
+        &:hover {
+            color: $primary-color;
+        }
+
+        &:visited {
+            color: #fff;
+        }
+    }
+}

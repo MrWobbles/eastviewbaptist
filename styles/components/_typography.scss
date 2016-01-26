@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #666666;
+}
+
+h1 {
+    div {
+        float: left;
+    }
+
+    .main {
+        color: $accent-color;
+        font-weight: 600;
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 30px;
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+    .sub-head {
+        font-size: 14px;
+        font-style: italic;
+        display: block;
+    }
+
+    .divider {
+        background: transparent url("../images/header-divider.png") no-repeat center center;
+        height: 75px;
+        background-size: contain;
+        transform: rotate(70deg);
+        transition: transform 0.5s $cubic-bezier;
+        margin: -15px 0;
+
+        @include breakpoint(small) {
+            transform: rotate(0deg);
+            margin: 0;
+        }
+    }
+
+    .quote-head {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}
+
+p{
+    white-space: normal;
+}
